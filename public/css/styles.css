@@ -798,6 +798,9 @@ h3{
 .leading-18{
   line-height: 1.125rem;
 }
+.leading-4{
+  line-height: 1rem;
+}
 .text-brand-dark{
   --tw-text-opacity: 1;
   color: rgb(35 35 35 / var(--tw-text-opacity));
@@ -1096,6 +1099,14 @@ h3{
   .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:leading-\[1\.125rem\]{
+    line-height: 1.125rem;
+  }
+
+  .lg\:leading-4{
+    line-height: 1rem;
   }
 }
 
