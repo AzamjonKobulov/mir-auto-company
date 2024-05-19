@@ -47,7 +47,7 @@
 }
 
 .hero-slider .swiper-pagination-progressbar {
-  @apply !w-[60%] xs:!w-2/3 sm:!w-3/4 lg:!w-[30%] 2xl:!w-80 !top-[95%] !left-4 lg:!left-1/2 2xl:!left-[40%] !z-40 bg-white/40;
+  @apply !w-[60%] xs:!w-2/3 sm:!w-3/4 lg:!w-[30%] 2xl:!w-80 !h-0.5 sm:!h-[0.1875rem] !top-[95%] !left-4 lg:!left-1/2 2xl:!left-[40%] !z-40 bg-white/40 rounded-full;
 }
 
 .hero-slider .swiper-pagination-progressbar-fill {
