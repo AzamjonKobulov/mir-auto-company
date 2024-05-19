@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>MIR Автотранспортная компания</title>
   </head>
   <body class="pb-96">
     <!-- HEADER -->
-    <header>
+    <header class="sticky top-0 z-50 bg-white">
       <nav
-        class="max-w-base mx-auto flex items-center justify-between font-firs py-3 xl:py-7 px-4"
+        class="h-16 xs:h-[4.5rem] lg:h-20 max-w-base mx-auto flex items-center justify-between font-firs px-4"
       >
         <!-- Logo -->
         <a href="#" class="flex items-center gap-4">
@@ -136,7 +141,7 @@
                   автотранспортную компанию
                 </p>
                 <button
-                  class="w-full xl:w-auto h-12 xl:h-14 2xl:h-16 bg-brand-green text-lg lg:text-xl font-medium text-brand-dark rounded-xl lg:rounded-2xl hover:bg-brand-dark-green transition-all duration-200 px-10"
+                  class="w-full xl:w-auto h-12 xl:h-14 2xl:h-16 bg-brand-green text-lg lg:text-xl font-medium text-brand-dark rounded-xl lg:rounded-2xl hover:rounded-[6.25rem] transition-all duration-500 px-10"
                 >
                   Откликнуться
                 </button>
@@ -158,7 +163,7 @@
             </div>
             <!-- Bottom Gray Blocks -->
             <div
-              class="w-full lg:w-2/3 xl:w-[51.625rem] lg:absolute bg-white rounded-tr-xl lg:bottom-0 z-20 lg:pt-5 lg:pr-5"
+              class="w-full lg:w-2/3 xl:w-[54.5rem] lg:absolute bg-white rounded-tr-xl lg:bottom-0 z-20 lg:pt-5 lg:pr-5"
             >
               <!-- Corner -->
               <svg
@@ -273,29 +278,135 @@
             class="aspect-square xs:aspect-auto xs:h-96 md:h-[31.25rem] lg:h-[37.5rem] xl:h-auto col-span-3 relative before:absolute before:w-full before:bottom-0 before:z-20 before:h-full before:bg-hero-trucks rounded-xl lg:rounded-2xl overflow-hidden"
           >
             <p
-              class="absolute top-4 left-6 z-30 font-fira text-white leading-18"
+              class="absolute top-4 left-4 lg:left-6 z-30 font-fira text-white text-xs xs:text-sm lg:text-base leading-18"
             >
               Cвежий парк <br />
               автомобилей
             </p>
-            <img
-              src="./assets/images/img-trucks.png"
-              alt="Trucks"
-              class="w-full h-full object-cover"
-            />
-            <!-- Bottom Gradiend Element -->
+            <!-- Swiper -->
+            <div class="swiper hero-slider w-full h-full relative">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/img-trucks.png"
+                    alt="Trucks"
+                    class="w-full h-full object-cover object-right"
+                  />
+                  <h3
+                    class="absolute bottom-10 lg:bottom-28 left-4 lg:left-1/2 2xl:left-[40%] text-white !z-40"
+                  >
+                    DAF/Scania/Sitrak
+                  </h3>
+                  <!-- Bottom Gradiend Element -->
+                  <div
+                    class="w-full h-full absolute right-0 top-0 z-10 bg-hero-trucks2"
+                  ></div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/img-trucks.png"
+                    alt="Trucks"
+                    class="w-full h-full object-cover object-right"
+                  />
+                  <h3
+                    class="absolute bottom-10 lg:bottom-28 left-4 lg:left-1/2 2xl:left-[40%] text-white !z-40"
+                  >
+                    DAF/Scania/Sitrak
+                  </h3>
+                  <!-- Bottom Gradiend Element -->
+                  <div
+                    class="w-full h-full absolute right-0 top-0 z-10 bg-hero-trucks2"
+                  ></div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/img-trucks.png"
+                    alt="Trucks"
+                    class="w-full h-full object-cover object-right"
+                  />
+                  <h3
+                    class="absolute bottom-10 lg:bottom-28 left-4 lg:left-1/2 2xl:left-[40%] text-white !z-40"
+                  >
+                    DAF/Scania/Sitrak
+                  </h3>
+                  <!-- Bottom Gradiend Element -->
+                  <div
+                    class="w-full h-full absolute right-0 top-0 z-10 bg-hero-trucks2"
+                  ></div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- Bottom Navigating Buttons -->
             <div
-              class="w-full h-full absolute right-0 top-0 z-10 bg-hero-trucks2 rounded-xl xl:rounded-2xl"
+              class="h-32 lg:h-40 w-full lg:w-2/3 absolute z-20 bottom-0 right-0 flex items-end lg:flex-col justify-between gap-4 lg:gap-8 p-4 lg:pr-6 lg:pb-8 lg:pt-5 lg:pl-7"
             >
-              <div class="relative w-full h-full">
-                <!-- <div
-                  class="curved-corner absolute bottom-1/2 left-1/2 z-50 rounded-full"
-                ></div> -->
+              <div class="ml-auto mt-auto flex items-center justify-between">
+                <!-- Buttons -->
+                <div class="flex items-center gap-2">
+                  <!-- Left -->
+                  <button
+                    class="hero-slider-prev w-12 h-12 shrink-0 grid place-content-center bg-brand-green rounded-xl hover:rounded-[2.5rem] transition-all duration-500"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_2040_152)">
+                        <path
+                          d="M10.8971 12L15.8652 16.95L14.4461 18.364L8.05874 12L14.4461 5.63601L15.8652 7.05001L10.8971 12Z"
+                          fill="#232323"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2040_152">
+                          <rect
+                            width="24"
+                            height="24"
+                            fill="white"
+                            transform="translate(24 24) rotate(-180)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <!-- Right -->
+                  <button
+                    class="hero-slider-next w-12 h-12 shrink-0 grid place-content-center bg-brand-green rounded-xl hover:rounded-[2.5rem] transition-all duration-500"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_2040_147)">
+                        <path
+                          d="M13.1029 12L8.13477 7.04999L9.55394 5.63599L15.9413 12L9.55394 18.364L8.13477 16.95L13.1029 12Z"
+                          fill="#232323"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2040_147">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

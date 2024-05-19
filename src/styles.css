@@ -45,3 +45,11 @@
   height: 80px;
   box-shadow: 15px 15px 0 0 red;
 }
+
+.hero-slider .swiper-pagination-progressbar {
+  @apply !w-[60%] xs:!w-2/3 sm:!w-3/4 lg:!w-[30%] 2xl:!w-80 !top-[95%] !left-4 lg:!left-1/2 2xl:!left-[40%] !z-40 bg-white/40;
+}
+
+.hero-slider .swiper-pagination-progressbar-fill {
+  @apply !bg-white;
+}
