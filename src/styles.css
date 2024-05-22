@@ -46,7 +46,7 @@
   }
 
   h4 {
-    @apply text-lg sm:text-xl lg:text-2xl;
+    @apply text-lg sm:text-xl lg:text-2xl leading-18 lg:leading-7;
   }
 }
 
