@@ -773,6 +773,12 @@ h4{
 .h-full{
   height: 100%;
 }
+.h-\[25rem\]{
+  height: 25rem;
+}
+.h-96{
+  height: 24rem;
+}
 .w-12{
   width: 3rem;
 }
