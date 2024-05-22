@@ -3,17 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>MIR Автотранспортная компания</title>
   </head>
   <body>
     <!-- HEADER -->
-    <header class="sticky top-0 z-50 bg-white">
+    <header
+      class="sticky top-0 z-50 bg-white"
+      data-aos="fade-down"
+      data-aos-duration="1000"
+    >
       <nav
         class="h-16 xs:h-[4.5rem] lg:h-20 max-w-base mx-auto flex items-center justify-between font-firs px-4"
       >
@@ -194,7 +199,7 @@
     <!-- MAIN -->
     <main>
       <!-- Hero -->
-      <section id="hero">
+      <section id="hero" data-aos="fade-up">
         <div
           class="xl:min-h-[43.375rem] max-w-base mx-auto relative flex flex-col-reverse lg:grid grid-cols-5 gap-4 lg:gap-6 px-4"
         >
@@ -496,6 +501,7 @@
       <section
         id="about"
         class="bg-white rounded-b-2xl lg:rounded-b-3xl xs:mt-[14.5rem] sm:mt-0"
+        data-aos="fade-up"
       >
         <div
           class="max-w-base mx-auto relative flex flex-col sm:flex-row gap-5 py-6 sm:py-10 lg:py-6 px-5"
@@ -593,7 +599,11 @@
       </section>
 
       <!-- Comfort -->
-      <section id="comfort" class="bg-brand-gray pt-5 lg:pt-6">
+      <section
+        id="comfort"
+        class="bg-brand-gray pt-5 lg:pt-6"
+        data-aos="fade-up"
+      >
         <div class="space-y-5 lg:space-y-6">
           <!-- Swiper -->
           <div class="swiper comfort-slider-free-mode px-5">
@@ -1218,7 +1228,11 @@
       </section>
 
       <!-- Routes -->
-      <section id="routes" class="bg-brand-gray pt-5 lg:pt-6">
+      <section
+        id="routes"
+        class="bg-brand-gray pt-5 lg:pt-6"
+        data-aos="fade-up"
+      >
         <div class="h-96 sm:h-[30rem] lg:h-[34.625rem] max-w-base mx-auto px-5">
           <!-- Swiper -->
           <div
@@ -1339,7 +1353,11 @@
       </section>
 
       <!-- Payment -->
-      <section id="payment" class="bg-brand-gray pt-5 lg:pt-6">
+      <section
+        id="payment"
+        class="bg-brand-gray pt-5 lg:pt-6"
+        data-aos="fade-up"
+      >
         <div
           class="max-w-base mx-auto flex flex-col md:flex-row gap-5 lg:gap-6 px-5"
         >
@@ -1433,7 +1451,11 @@
       </section>
 
       <!-- History of Drivers -->
-      <section id="history-drivers" class="bg-brand-gray py-5 lg:py-6">
+      <section
+        id="history-drivers"
+        class="bg-brand-gray py-5 lg:py-6"
+        data-aos="fade-up"
+      >
         <div class="max-w-base mx-auto w-full px-5">
           <div class="w-full flex flex-col xl:flex-row gap-5 justify-between">
             <h4 class="text-brand-dark/40 leading-18 lg:leading-7">
@@ -1606,7 +1628,11 @@
       </section>
 
       <!-- Reviews -->
-      <section id="reviews" class="bg-brand-gray pt-5 lg:pt-6">
+      <section
+        id="reviews"
+        class="bg-brand-gray pt-5 lg:pt-6"
+        data-aos="fade-up"
+      >
         <div
           class="max-w-base mx-auto w-full grid lg:grid-cols-12 gap-5 lg:gap-6 px-5"
         >
@@ -1798,7 +1824,11 @@
       </section>
 
       <!-- Contacts -->
-      <section id="contacts" class="bg-brand-gray pt-5 lg:pt-6">
+      <section
+        id="contacts"
+        class="bg-brand-gray pt-5 lg:pt-6"
+        data-aos="fade-up"
+      >
         <div
           class="max-w-base mx-auto w-full rounded-xl lg:rounded-2xl overflow-hidden px-5"
         >
@@ -1863,7 +1893,7 @@
     </main>
 
     <!-- Footer -->
-    <footer id="footer" class="bg-brand-gray py-5 lg:py-6">
+    <footer id="footer" class="bg-brand-gray py-5 lg:py-6" data-aos="fade-up">
       <div class="max-w-base mx-auto w-full space-y-5 lg:space-y-6 px-5">
         <!-- Footer Top -->
         <div
@@ -1948,6 +1978,7 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
