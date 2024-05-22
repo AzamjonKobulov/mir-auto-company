@@ -38,6 +38,7 @@ module.exports = {
           'linear-gradient(180deg, rgba(6, 138, 243, 0.4) 0%, rgba(6, 138, 243, 0) 42.07%)',
         'hero-trucks2':
           'linear-gradient(180deg, rgba(0, 0, 0, 0) 62.82%, rgba(0, 0, 0, 0.4) 100%)',
+        road: 'linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(71.98deg, #117FD6 14.08%, #008EFF 96.2%),   linear-gradient(0deg, rgba(35, 35, 35, 0.2), rgba(35, 35, 35, 0.2))',
       },
       lineHeight: {
         18: '1.125rem',

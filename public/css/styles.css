@@ -636,14 +636,14 @@ h4{
 .right-0{
   right: 0px;
 }
+.right-5{
+  right: 1.25rem;
+}
 .top-0{
   top: 0px;
 }
 .top-4{
   top: 1rem;
-}
-.right-5{
-  right: 1.25rem;
 }
 .top-5{
   top: 1.25rem;
@@ -742,6 +742,9 @@ h4{
 .h-full{
   height: 100%;
 }
+.h-\[120\%\]{
+  height: 120%;
+}
 .w-12{
   width: 3rem;
 }
@@ -766,9 +769,8 @@ h4{
 .w-full{
   width: 100%;
 }
-.w-fit{
-  width: -moz-fit-content;
-  width: fit-content;
+.w-\[120\%\]{
+  width: 120%;
 }
 .max-w-40{
   max-width: 10rem;
@@ -865,6 +867,14 @@ h4{
   margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
 }
+.divide-y > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+.divide-brand-dark\/20 > :not([hidden]) ~ :not([hidden]){
+  border-color: rgb(35 35 35 / 0.2);
+}
 .overflow-hidden{
   overflow: hidden;
 }
@@ -928,9 +938,19 @@ h4{
 .bg-hero-trucks2{
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 62.82%, rgba(0, 0, 0, 0.4) 100%);
 }
+.bg-road{
+  background-image: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(71.98deg, #117FD6 14.08%, #008EFF 96.2%),   linear-gradient(0deg, rgba(35, 35, 35, 0.2), rgba(35, 35, 35, 0.2));
+}
+.\!bg-road{
+  background-image: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(71.98deg, #117FD6 14.08%, #008EFF 96.2%),   linear-gradient(0deg, rgba(35, 35, 35, 0.2), rgba(35, 35, 35, 0.2)) !important;
+}
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+.object-scale-down{
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 .object-\[80\%\]{
   -o-object-position: 80%;
@@ -943,6 +963,26 @@ h4{
 .object-right{
   -o-object-position: right;
      object-position: right;
+}
+.object-bottom{
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.object-\[70\%\]{
+  -o-object-position: 70%;
+     object-position: 70%;
+}
+.object-\[50\%\]{
+  -o-object-position: 50%;
+     object-position: 50%;
+}
+.object-\[90\%\]{
+  -o-object-position: 90%;
+     object-position: 90%;
+}
+.object-top{
+  -o-object-position: top;
+     object-position: top;
 }
 .p-4{
   padding: 1rem;
@@ -961,6 +1001,10 @@ h4{
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .py-6{
   padding-top: 1.5rem;
@@ -1395,6 +1439,10 @@ h4{
     margin-top: 0px;
   }
 
+  .sm\:aspect-auto{
+    aspect-ratio: auto;
+  }
+
   .sm\:h-40{
     height: 10rem;
   }
@@ -1466,6 +1514,10 @@ h4{
 
 @media (min-width: 48rem){
 
+  .md\:aspect-square{
+    aspect-ratio: 1 / 1;
+  }
+
   .md\:h-16{
     height: 4rem;
   }
@@ -1484,6 +1536,14 @@ h4{
 
   .md\:w-auto{
     width: auto;
+  }
+
+  .md\:w-1\/2{
+    width: 50%;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
   }
 
   .md\:text-3xl{
@@ -1544,6 +1604,10 @@ h4{
     display: none;
   }
 
+  .lg\:aspect-square{
+    aspect-ratio: 1 / 1;
+  }
+
   .lg\:\!h-\[13\.5rem\]{
     height: 13.5rem !important;
   }
@@ -1592,16 +1656,12 @@ h4{
     width: auto;
   }
 
-  .lg\:max-w-80{
-    max-width: 20rem;
-  }
-
-  .lg\:max-w-44{
-    max-width: 11rem;
-  }
-
   .lg\:max-w-64{
     max-width: 16rem;
+  }
+
+  .lg\:max-w-80{
+    max-width: 20rem;
   }
 
   .lg\:grid-cols-1{
@@ -1675,6 +1735,11 @@ h4{
   .lg\:py-6{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+
+  .lg\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .lg\:pb-6{
@@ -1820,10 +1885,6 @@ h4{
 
   .\32xl\:h-16{
     height: 4rem;
-  }
-
-  .\32xl\:max-w-none{
-    max-width: none;
   }
 
   .\32xl\:text-base{
