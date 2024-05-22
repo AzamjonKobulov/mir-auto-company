@@ -703,6 +703,9 @@ h4{
 .aspect-square{
   aspect-ratio: 1 / 1;
 }
+.aspect-video{
+  aspect-ratio: 16 / 9;
+}
 .h-12{
   height: 3rem;
 }
@@ -744,6 +747,9 @@ h4{
 }
 .h-\[120\%\]{
   height: 120%;
+}
+.h-96{
+  height: 24rem;
 }
 .w-12{
   width: 3rem;
@@ -1606,6 +1612,10 @@ h4{
 
   .lg\:aspect-square{
     aspect-ratio: 1 / 1;
+  }
+
+  .lg\:aspect-auto{
+    aspect-ratio: auto;
   }
 
   .lg\:\!h-\[13\.5rem\]{
