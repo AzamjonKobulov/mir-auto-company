@@ -9,6 +9,23 @@ function scrollHeader() {
   }
 }
 
+// Mobile Menu
+const mobileMenuBtns = document.querySelectorAll('#mobileMenuBtn');
+const mobileMenu = document.querySelector('#mobileMenu');
+
+const toggleMobileMenu = () => {
+  mobileMenu.classList.toggle('translate-x-full');
+  document.body.classList.toggle('overflow-hidden');
+};
+
+mobileMenuBtns.forEach((btn) => {
+  btn.addEventListener('click', toggleMobileMenu);
+});
+
+document.querySelectorAll('#mobileMenu ul a').forEach((link) => {
+  link.addEventListener('click', toggleMobileMenu);
+});
+
 window.addEventListener('scroll', scrollHeader);
 
 var swiper = new Swiper('.hero-slider', {

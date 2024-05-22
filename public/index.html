@@ -86,7 +86,7 @@
         </div>
 
         <!-- Mobile Menu Button -->
-        <button class="lg:hidden">
+        <button class="lg:hidden" id="mobileMenuBtn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -107,16 +107,15 @@
       <!-- Mobile Menu -->
       <div
         id="mobileMenu"
-        class="fixed inset-0 z-[70] w-full h-full bg-brand-whitish translate-y-full transition-all duration-300"
+        class="fixed inset-0 z-[70] w-full h-full bg-brand-green translate-x-full transition-all duration-300"
       >
-        <div class="flex items-center justify-between bg-white py-3 px-4">
+        <div class="flex items-center justify-between bg-brand-green py-1 px-4">
           <!-- Logo -->
-          <div class="w-36 h-10 lg:w-40 lg:h-12">
-            <img
-              src="./assets/images/logo.png"
-              alt="Logo"
-              class="w-full h-full"
-            />
+          <div class="flex items-center gap-4">
+            <span class="text-32 text-brand-dark font-medium">МИР</span>
+            <p class="text-brand-dark/60 lg:hidden xl:block">
+              Автотранспортная компания
+            </p>
           </div>
           <button id="mobileMenuBtn">
             <svg
@@ -179,11 +178,11 @@
                 >Контакты</a
               >
             </li>
-            <li class="text-xl pt-10">
+            <li class="flex flex-col text-xl pt-10">
               <a href="tel:" class="font-medium transition-all duration-300">
                 8 (800) 2000-40-40
               </a>
-              <a href="#mailto:" class="text-sm mt-5"> mail@site.ru </a>
+              <a href="#mailto:" class="mt-5"> mail@site.ru </a>
             </li>
           </ul>
         </div>
