@@ -35,6 +35,10 @@
     @apply scroll-smooth;
   }
 
+  body {
+    @apply bg-brand-gray;
+  }
+
   h2,
   h3,
   h4 {
