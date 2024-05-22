@@ -34,7 +34,7 @@ document.querySelectorAll('#mobileMenu ul a').forEach((link) => {
   link.addEventListener('click', toggleMobileMenu);
 });
 
-// Active Link Functionality
+// Active Link Function
 document.addEventListener('DOMContentLoaded', function () {
   const navLinks = document.querySelectorAll('nav .nav-link');
   const mobileNavLinks = document.querySelectorAll('#mobileMenu .nav-link');
