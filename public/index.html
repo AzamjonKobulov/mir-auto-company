@@ -286,7 +286,7 @@
               автомобилей
             </p>
             <!-- Swiper -->
-            <div class="swiper swiper-hero w-full h-full relative">
+            <div class="swiper mySwiper w-full h-full relative">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img
@@ -507,10 +507,10 @@
       </section>
 
       <!-- Comfort -->
-      <section id="comfort" class="bg-brand-gray pt-5 lg:py-6">
+      <section id="comfort" class="bg-brand-gray pt-5 lg:pt-6">
         <div class="space-y-5 lg:space-y-6">
           <!-- Swiper -->
-          <div class="swiper swiper-free-mode px-5">
+          <div class="swiper mySwiper2 px-5">
             <div class="swiper-wrapper ml-6">
               <!-- Slide 1 -->
               <div class="swiper-slide">
@@ -769,7 +769,7 @@
               </div>
               <!-- Auto swiper -->
               <div
-                class="h-40 sm:h-48 w-full shrink-0 rounded-xl lg:rounded-2xl overflow-hidden mt-5 lg:mt-6 swiper slider-auto"
+                class="h-40 sm:h-48 w-full shrink-0 rounded-xl lg:rounded-2xl overflow-hidden mt-5 lg:mt-6 swiper mySwiper"
               >
                 <div class="h-full swiper-wrapper">
                   <!-- Slide 1 -->
@@ -931,6 +931,96 @@
                   </p>
                 </div>
               </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Routes -->
+      <section id="routes" class="bg-brand-gray pt-5 lg:pt-6">
+        <div class="max-w-base mx-auto px-5">
+          <!-- Swiper -->
+          <div
+            class="swiper mySwiper4 w-full h-full relative border-4 border-white rounded-xl lg:rounded-2xl"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/img-map.svg"
+                  alt="Trucks"
+                  class="w-full h-full object-cover object-right"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/img-map.svg"
+                  alt="Trucks"
+                  class="w-full h-full object-cover object-right"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/img-map.svg"
+                  alt="Trucks"
+                  class="w-full h-full object-cover object-right"
+                />
+              </div>
+            </div>
+            <!--  Navigating Buttons -->
+            <div class="absolute top-5 right-5 z-10 flex items-center gap-2">
+              <!-- Left -->
+              <button
+                class="hero-slider-prev w-12 h-12 shrink-0 grid place-content-center bg-white rounded-xl hover:rounded-[2.5rem] transition-all duration-500"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2040_152)">
+                    <path
+                      d="M10.8971 12L15.8652 16.95L14.4461 18.364L8.05874 12L14.4461 5.63601L15.8652 7.05001L10.8971 12Z"
+                      fill="#232323"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2040_152">
+                      <rect
+                        width="24"
+                        height="24"
+                        fill="white"
+                        transform="translate(24 24) rotate(-180)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+              <!-- Right -->
+              <button
+                class="hero-slider-next w-12 h-12 shrink-0 grid place-content-center bg-white rounded-xl hover:rounded-[2.5rem] transition-all duration-500"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2040_147)">
+                    <path
+                      d="M13.1029 12L8.13477 7.04999L9.55394 5.63599L15.9413 12L9.55394 18.364L8.13477 16.95L13.1029 12Z"
+                      fill="#232323"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2040_147">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
             </div>
           </div>
         </div>

@@ -642,6 +642,12 @@ h4{
 .top-4{
   top: 1rem;
 }
+.right-5{
+  right: 1.25rem;
+}
+.top-5{
+  top: 1.25rem;
+}
 .\!z-40{
   z-index: 40 !important;
 }
@@ -759,6 +765,10 @@ h4{
 }
 .w-full{
   width: 100%;
+}
+.w-fit{
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .max-w-40{
   max-width: 10rem;
@@ -879,6 +889,9 @@ h4{
 }
 .border{
   border-width: 1px;
+}
+.border-4{
+  border-width: 4px;
 }
 .border-b{
   border-bottom-width: 1px;
