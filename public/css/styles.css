@@ -969,6 +969,10 @@ h4{
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
+.rounded-b-xl{
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
 .rounded-tr-xl{
   border-top-right-radius: 0.75rem;
 }
@@ -1902,6 +1906,11 @@ h4{
   .lg\:rounded-b-3xl{
     border-bottom-right-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
+  }
+
+  .lg\:rounded-b-2xl{
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
   }
 
   .lg\:p-6{
