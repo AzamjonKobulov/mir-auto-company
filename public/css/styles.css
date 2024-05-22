@@ -981,10 +981,6 @@ h4{
 .rounded-xl{
   border-radius: 0.75rem;
 }
-.rounded-b-2xl{
-  border-bottom-right-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-}
 .rounded-b-xl{
   border-bottom-right-radius: 0.75rem;
   border-bottom-left-radius: 0.75rem;
@@ -1057,10 +1053,6 @@ h4{
 .object-right{
   -o-object-position: right;
      object-position: right;
-}
-.object-center{
-  -o-object-position: center;
-     object-position: center;
 }
 .p-3{
   padding: 0.75rem;
@@ -1779,10 +1771,6 @@ h4{
     height: 37.5rem;
   }
 
-  .lg\:w-1\/2{
-    width: 50%;
-  }
-
   .lg\:w-16{
     width: 4rem;
   }
@@ -2059,22 +2047,8 @@ h4{
     gap: 7.5rem;
   }
 
-  .xl\:overflow-visible{
-    overflow: visible;
-  }
-
   .xl\:rounded-tr-2xl{
     border-top-right-radius: 1rem;
-  }
-
-  .xl\:object-contain{
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-
-  .xl\:object-left{
-    -o-object-position: left;
-       object-position: left;
   }
 
   .xl\:p-6{
@@ -2105,10 +2079,6 @@ h4{
     width: 35rem;
   }
 
-  .\32xl\:max-w-\[50\.5rem\]{
-    max-width: 50.5rem;
-  }
-
   .\32xl\:max-w-base{
     max-width: 89.5rem;
   }
@@ -2119,11 +2089,6 @@ h4{
 
   .\32xl\:overflow-visible{
     overflow: visible;
-  }
-
-  .\32xl\:object-center{
-    -o-object-position: center;
-       object-position: center;
   }
 
   .\32xl\:text-base{
