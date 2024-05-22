@@ -31,6 +31,10 @@
 }
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
   h2,
   h3,
   h4 {
