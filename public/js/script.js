@@ -103,7 +103,6 @@ var swiper = new Swiper('.comfort-slider-free-mode', {
 });
 
 var swiper = new Swiper('.slider-comfort-auto', {
-  spaceBetween: 20,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
