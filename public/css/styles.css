@@ -648,12 +648,6 @@ h4{
 .top-5{
   top: 1.25rem;
 }
-.-bottom-1\/2{
-  bottom: -50%;
-}
-.-bottom-10{
-  bottom: -2.5rem;
-}
 .\!z-40{
   z-index: 40 !important;
 }
@@ -674,9 +668,6 @@ h4{
 }
 .col-span-3{
   grid-column: span 3 / span 3;
-}
-.m-auto{
-  margin: auto;
 }
 .mx-auto{
   margin-left: auto;
@@ -712,9 +703,6 @@ h4{
 .aspect-square{
   aspect-ratio: 1 / 1;
 }
-.aspect-video{
-  aspect-ratio: 16 / 9;
-}
 .h-12{
   height: 3rem;
 }
@@ -748,20 +736,17 @@ h4{
 .h-80{
   height: 20rem;
 }
+.h-96{
+  height: 24rem;
+}
+.h-\[120\%\]{
+  height: 120%;
+}
 .h-\[7\.5rem\]{
   height: 7.5rem;
 }
 .h-full{
   height: 100%;
-}
-.h-\[120\%\]{
-  height: 120%;
-}
-.h-96{
-  height: 24rem;
-}
-.h-9{
-  height: 2.25rem;
 }
 .w-12{
   width: 3rem;
@@ -781,17 +766,14 @@ h4{
 .w-8{
   width: 2rem;
 }
+.w-\[120\%\]{
+  width: 120%;
+}
 .w-\[7\.5rem\]{
   width: 7.5rem;
 }
 .w-full{
   width: 100%;
-}
-.w-\[120\%\]{
-  width: 120%;
-}
-.w-9{
-  width: 2.25rem;
 }
 .min-w-max{
   min-width: -moz-max-content;
@@ -840,9 +822,6 @@ h4{
 .items-center{
   align-items: center;
 }
-.justify-center{
-  justify-content: center;
-}
 .justify-between{
   justify-content: space-between;
 }
@@ -863,12 +842,6 @@ h4{
 }
 .gap-8{
   gap: 2rem;
-}
-.gap-10{
-  gap: 2.5rem;
-}
-.gap-3\.5{
-  gap: 0.875rem;
 }
 .space-y-1 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
@@ -918,9 +891,6 @@ h4{
 }
 .overflow-hidden{
   overflow: hidden;
-}
-.\!overflow-visible{
-  overflow: visible !important;
 }
 .whitespace-nowrap{
   white-space: nowrap;
@@ -976,6 +946,9 @@ h4{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.\!bg-road{
+  background-image: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(71.98deg, #117FD6 14.08%, #008EFF 96.2%),   linear-gradient(0deg, rgba(35, 35, 35, 0.2), rgba(35, 35, 35, 0.2)) !important;
+}
 .bg-hero-block{
   background-image: linear-gradient(71.98deg, #117FD6 14.08%, #008EFF 96.2%);
 }
@@ -985,16 +958,9 @@ h4{
 .bg-road{
   background-image: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(71.98deg, #117FD6 14.08%, #008EFF 96.2%),   linear-gradient(0deg, rgba(35, 35, 35, 0.2), rgba(35, 35, 35, 0.2));
 }
-.\!bg-road{
-  background-image: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(71.98deg, #117FD6 14.08%, #008EFF 96.2%),   linear-gradient(0deg, rgba(35, 35, 35, 0.2), rgba(35, 35, 35, 0.2)) !important;
-}
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
-}
-.object-scale-down{
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
 }
 .object-\[80\%\]{
   -o-object-position: 80%;
@@ -1007,26 +973,6 @@ h4{
 .object-right{
   -o-object-position: right;
      object-position: right;
-}
-.object-bottom{
-  -o-object-position: bottom;
-     object-position: bottom;
-}
-.object-\[70\%\]{
-  -o-object-position: 70%;
-     object-position: 70%;
-}
-.object-\[50\%\]{
-  -o-object-position: 50%;
-     object-position: 50%;
-}
-.object-\[90\%\]{
-  -o-object-position: 90%;
-     object-position: 90%;
-}
-.object-top{
-  -o-object-position: top;
-     object-position: top;
 }
 .p-4{
   padding: 1rem;
@@ -1071,9 +1017,6 @@ h4{
 }
 .pt-7{
   padding-top: 1.75rem;
-}
-.pb-20{
-  padding-bottom: 5rem;
 }
 .font-fira{
   font-family: Fira Mono, monospace;
@@ -1210,7 +1153,7 @@ h4{
   box-shadow: 15px 15px 0 0 red;
 }
 
-.swiper-hero .swiper-pagination-progressbar{
+.hero-slider .swiper-pagination-progressbar{
   top: 95% !important;
   left: 1rem !important;
   z-index: 40 !important;
@@ -1222,14 +1165,14 @@ h4{
 
 @media (min-width: 30rem){
 
-  .swiper-hero .swiper-pagination-progressbar{
+  .hero-slider .swiper-pagination-progressbar{
     width: 66.666667% !important;
   }
 }
 
 @media (min-width: 40rem){
 
-  .swiper-hero .swiper-pagination-progressbar{
+  .hero-slider .swiper-pagination-progressbar{
     height: 0.1875rem !important;
     width: 75% !important;
   }
@@ -1237,7 +1180,7 @@ h4{
 
 @media (min-width: 64rem){
 
-  .swiper-hero .swiper-pagination-progressbar{
+  .hero-slider .swiper-pagination-progressbar{
     left: 50% !important;
     width: 30% !important;
   }
@@ -1245,29 +1188,28 @@ h4{
 
 @media (min-width: 80rem){
 
-  .swiper-hero .swiper-pagination-progressbar{
+  .hero-slider .swiper-pagination-progressbar{
     left: 45% !important;
   }
 }
 
 @media (min-width: 90rem){
 
-  .swiper-hero .swiper-pagination-progressbar{
+  .hero-slider .swiper-pagination-progressbar{
     left: 40% !important;
     width: 20rem !important;
   }
 }
 
-.swiper-hero .swiper-pagination-progressbar-fill{
+.hero-slider .swiper-pagination-progressbar-fill{
   border-radius: 9999px !important;
   --tw-bg-opacity: 1 !important;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
 }
 
-.swiper-autoplay .swiper-pagination{
+.hero-slider .swiper-pagination{
   z-index: 10 !important;
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(255 255 255 / 0.4) !important;
 }
 
 /* <!-- Auto swiper -->
@@ -1482,40 +1424,12 @@ h4{
 
 @media (min-width: 40rem){
 
-  .sm\:absolute{
-    position: absolute;
-  }
-
-  .sm\:right-5{
-    right: 1.25rem;
-  }
-
-  .sm\:top-5{
-    top: 1.25rem;
-  }
-
   .sm\:mt-0{
     margin-top: 0px;
   }
 
-  .sm\:block{
-    display: block;
-  }
-
-  .sm\:inline-block{
-    display: inline-block;
-  }
-
   .sm\:flex{
     display: flex;
-  }
-
-  .sm\:hidden{
-    display: none;
-  }
-
-  .sm\:aspect-auto{
-    aspect-ratio: auto;
   }
 
   .sm\:h-40{
@@ -1532,6 +1446,10 @@ h4{
 
   .sm\:h-full{
     height: 100%;
+  }
+
+  .sm\:h-\[30rem\]{
+    height: 30rem;
   }
 
   .sm\:max-w-none{
@@ -1605,16 +1523,16 @@ h4{
     height: auto;
   }
 
+  .md\:w-1\/2{
+    width: 50%;
+  }
+
   .md\:w-16{
     width: 4rem;
   }
 
   .md\:w-auto{
     width: auto;
-  }
-
-  .md\:w-1\/2{
-    width: 50%;
   }
 
   .md\:flex-row{
@@ -1679,14 +1597,6 @@ h4{
     display: none;
   }
 
-  .lg\:aspect-square{
-    aspect-ratio: 1 / 1;
-  }
-
-  .lg\:aspect-auto{
-    aspect-ratio: auto;
-  }
-
   .lg\:\!h-\[13\.5rem\]{
     height: 13.5rem !important;
   }
@@ -1713,6 +1623,10 @@ h4{
 
   .lg\:h-\[37\.5rem\]{
     height: 37.5rem;
+  }
+
+  .lg\:h-\[34\.625rem\]{
+    height: 34.625rem;
   }
 
   .lg\:w-1\/2{
@@ -1796,6 +1710,11 @@ h4{
     padding: 1.5rem;
   }
 
+  .lg\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .lg\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
@@ -1814,11 +1733,6 @@ h4{
   .lg\:py-6{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-  }
-
-  .lg\:px-10{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 
   .lg\:pb-6{

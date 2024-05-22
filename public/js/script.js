@@ -11,7 +11,7 @@ function scrollHeader() {
 
 window.addEventListener('scroll', scrollHeader);
 
-var swiper = new Swiper('.mySwiper', {
+var swiper = new Swiper('.hero-slider', {
   pagination: {
     el: '.swiper-pagination',
     type: 'progressbar',
@@ -22,13 +22,13 @@ var swiper = new Swiper('.mySwiper', {
   },
 });
 
-var swiper = new Swiper('.mySwiper2', {
+var swiper = new Swiper('.comfort-slider-free-mode', {
   slidesPerView: 3,
   spaceBetween: 24,
   freeMode: true,
   breakpoints: {
     0: {
-      slidesPerView: 1.5,
+      slidesPerView: 1.1,
       spaceBetween: 20,
     },
     768: {
@@ -46,9 +46,7 @@ var swiper = new Swiper('.mySwiper2', {
   },
 });
 
-var swiper = new Swiper('.mySwiper3', {
-  spaceBetween: 30,
-  centeredSlides: true,
+var swiper = new Swiper('.comfort-slider', {
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
@@ -59,7 +57,7 @@ var swiper = new Swiper('.mySwiper3', {
   },
 });
 
-var swiper = new Swiper('.mySwiper4', {
+var swiper = new Swiper('.route-slider', {
   pagination: {
     el: '.swiper-pagination',
     type: 'progressbar',
