@@ -46,22 +46,12 @@ var swiper = new Swiper('.comfort-slider-free-mode', {
   },
 });
 
-var swiper = new Swiper('.comfort-slider', {
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-});
-
 var swiper = new Swiper('.route-slider', {
   pagination: {
     el: '.swiper-pagination',
     type: 'progressbar',
   },
+  allowTouchMove: false,
   loop: true,
   navigation: {
     nextEl: '.route-slider-next',
