@@ -64,8 +64,9 @@ var swiper = new Swiper('.mySwiper4', {
     el: '.swiper-pagination',
     type: 'progressbar',
   },
+  loop: true,
   navigation: {
-    nextEl: '.hero-slider-next',
-    prevEl: '.hero-slider-prev',
+    nextEl: '.route-slider-next',
+    prevEl: '.route-slider-prev',
   },
 });

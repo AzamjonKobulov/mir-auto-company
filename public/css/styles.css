@@ -648,6 +648,12 @@ h4{
 .top-5{
   top: 1.25rem;
 }
+.-bottom-1\/2{
+  bottom: -50%;
+}
+.-bottom-10{
+  bottom: -2.5rem;
+}
 .\!z-40{
   z-index: 40 !important;
 }
@@ -668,6 +674,9 @@ h4{
 }
 .col-span-3{
   grid-column: span 3 / span 3;
+}
+.m-auto{
+  margin: auto;
 }
 .mx-auto{
   margin-left: auto;
@@ -751,6 +760,9 @@ h4{
 .h-96{
   height: 24rem;
 }
+.h-9{
+  height: 2.25rem;
+}
 .w-12{
   width: 3rem;
 }
@@ -778,6 +790,13 @@ h4{
 .w-\[120\%\]{
   width: 120%;
 }
+.w-9{
+  width: 2.25rem;
+}
+.min-w-max{
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
 .max-w-40{
   max-width: 10rem;
 }
@@ -786,6 +805,10 @@ h4{
 }
 .max-w-base{
   max-width: 89.5rem;
+}
+.max-w-min{
+  max-width: -moz-min-content;
+  max-width: min-content;
 }
 .flex-1{
   flex: 1 1 0%;
@@ -817,6 +840,9 @@ h4{
 .items-center{
   align-items: center;
 }
+.justify-center{
+  justify-content: center;
+}
 .justify-between{
   justify-content: space-between;
 }
@@ -837,6 +863,12 @@ h4{
 }
 .gap-8{
   gap: 2rem;
+}
+.gap-10{
+  gap: 2.5rem;
+}
+.gap-3\.5{
+  gap: 0.875rem;
 }
 .space-y-1 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
@@ -881,8 +913,14 @@ h4{
 .divide-brand-dark\/20 > :not([hidden]) ~ :not([hidden]){
   border-color: rgb(35 35 35 / 0.2);
 }
+.overflow-auto{
+  overflow: auto;
+}
 .overflow-hidden{
   overflow: hidden;
+}
+.\!overflow-visible{
+  overflow: visible !important;
 }
 .whitespace-nowrap{
   white-space: nowrap;
@@ -1033,6 +1071,9 @@ h4{
 }
 .pt-7{
   padding-top: 1.75rem;
+}
+.pb-20{
+  padding-bottom: 5rem;
 }
 .font-fira{
   font-family: Fira Mono, monospace;
@@ -1441,8 +1482,36 @@ h4{
 
 @media (min-width: 40rem){
 
+  .sm\:absolute{
+    position: absolute;
+  }
+
+  .sm\:right-5{
+    right: 1.25rem;
+  }
+
+  .sm\:top-5{
+    top: 1.25rem;
+  }
+
   .sm\:mt-0{
     margin-top: 0px;
+  }
+
+  .sm\:block{
+    display: block;
+  }
+
+  .sm\:inline-block{
+    display: inline-block;
+  }
+
+  .sm\:flex{
+    display: flex;
+  }
+
+  .sm\:hidden{
+    display: none;
   }
 
   .sm\:aspect-auto{
